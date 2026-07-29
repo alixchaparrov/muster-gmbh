@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+._*
+
+# Packet Tracer
+*.pkt.bak
+*.pka.bak
+
+# Proxmox / VM-Exporte (zu groß für Git)
+*.vma
+*.vma.zst
+*.qcow2
+*.raw
+*.iso
+
+# Office-Temporärdateien
+~$*
+*.tmp
+
+# Zugangsdaten — niemals versionieren
+*credentials*
+*passwords*
+.env
