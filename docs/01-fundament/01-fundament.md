@@ -78,7 +78,7 @@ Konfiguration erstellt:
 
 | Parameter | Wert | Begründung |
 |---|---|---|
-| Arbeitsspeicher | 16384 MB | ausreichend für Installation und Betrieb |
+| Arbeitsspeicher | 16384 MB (Installation) | für die Installation ausreichend; für den Betrieb aller Labor-VMs später auf 32768 MB (32 GiB) erhöht (siehe Baustein 1) |
 | Prozessoren | 4 Kerne, Typ `host` | `host` gibt die CPU-Flags durch → nötig für verschachteltes KVM |
 | BIOS | SeaBIOS | stabil, keine Secure-Boot-Komplexität |
 | Maschinentyp | i440fx | bewährt für diese Konfiguration |
@@ -187,8 +187,11 @@ Die VM 900 wurde zunächst mit deutlich höheren Werten angelegt: 6 Kerne,
 32768 MB Arbeitsspeicher, UEFI-Firmware (OVMF) und Maschinentyp `q35`. Diese
 aggressivere Konfiguration führte zu den oben beschriebenen Installationsfehlern,
 insbesondere zum Abbruch des Installers mit einem *Kernel Panic*. Erst die
-konservative Konfiguration aus Abschnitt 4.1 (4 Kerne, 16 GiB, SeaBIOS, i440fx)
-führte zu einer erfolgreichen Installation.
+konservative Konfiguration aus Abschnitt 4.1 (4 Kerne, SeaBIOS statt OVMF,
+i440fx statt q35) führte zu einer erfolgreichen Installation. Ursache der
+Abbrüche waren die Firmware (OVMF) und der Maschinentyp (q35), **nicht** der
+Arbeitsspeicher – dieser wurde für den späteren Betrieb ohnehin wieder auf
+32 GiB gesetzt.
 
 Die folgenden Aufnahmen dokumentieren diesen ersten, fehlgeschlagenen Versuch.
 Sie zeigen **nicht** die endgültige Konfiguration der VM 900.
