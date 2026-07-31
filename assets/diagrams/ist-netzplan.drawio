@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Seite-1" id="Ebrvm5QZI_RA_O4lWh67">
+    <mxGraphModel dx="1202" dy="830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qCpO6rBxxG482hB8VmVx-12" edge="1" parent="1" source="qCpO6rBxxG482hB8VmVx-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="qCpO6rBxxG482hB8VmVx-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-3" parent="1" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="&lt;div&gt;FRITZ!Box&lt;/div&gt;&lt;div&gt;&amp;nbsp; Router · DHCP · WLAN&lt;/div&gt;&lt;div&gt;&amp;nbsp; 192.168.178.1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="332" y="225.75" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-18" edge="1" parent="1" source="qCpO6rBxxG482hB8VmVx-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="qCpO6rBxxG482hB8VmVx-15" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="270" />
+              <mxPoint x="460" y="320" />
+              <mxPoint x="360" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-24" edge="1" parent="1" source="qCpO6rBxxG482hB8VmVx-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="qCpO6rBxxG482hB8VmVx-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="676" y="330" />
+              <mxPoint x="676" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-25" edge="1" parent="1" source="qCpO6rBxxG482hB8VmVx-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="qCpO6rBxxG482hB8VmVx-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-9" parent="1" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" value="&lt;div&gt;Unmanaged Switch&lt;/div&gt;&lt;div&gt;&amp;nbsp; (keine VLANs möglich)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="651" y="215.75" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-13" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;" value="Internet&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="126.98" x="30" y="215.75" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-14" edge="1" parent="1" source="qCpO6rBxxG482hB8VmVx-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="qCpO6rBxxG482hB8VmVx-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-15" parent="1" style="shape=mxgraph.signs.tech.computer;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" value="Büro-PCs (8×)&lt;br/&gt;192.168.178.x" vertex="1">
+          <mxGeometry height="80" width="80" x="340" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-20" parent="1" style="shape=mxgraph.signs.tech.computer;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" value="&lt;div&gt;Geschäftsführung (3×)&lt;/div&gt;&lt;div&gt;192.168.178.x&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="488" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-21" parent="1" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.printer;" value="&lt;div&gt;Drucker&lt;/div&gt;&lt;div&gt;192.168.178.x&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="636" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-22" parent="1" style="fillColorStyles=neutralFill;neutralFill=#9DA6A8;shape=mxgraph.networks2.icon;aspect=fixed;fillColor=#EDEDED;strokeColor=#000000;gradientColor=#5B6163;network2IconShadow=1;network2bgFillColor=none;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;network2Icon=mxgraph.networks2.nas_filer;network2IconW=1;network2IconH=0.62;" value="NAS&#xa;1 SMB-Freigabe · gemeinsames Passwort&#xa;192.168.178.x" vertex="1">
+          <mxGeometry height="80" width="129.03" x="790" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-23" edge="1" parent="1" source="qCpO6rBxxG482hB8VmVx-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="qCpO6rBxxG482hB8VmVx-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="594" y="280" />
+              <mxPoint x="500" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-26" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.tab2;strokeColor=#c0c0c0;" value="&lt;div&gt;Monteur-Tablets (14×)&lt;/div&gt;&lt;div&gt;&amp;nbsp; WLAN&lt;/div&gt;&lt;div&gt;&amp;nbsp; 192.168.178.x&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="950" y="225.75" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" value="&lt;h4 style=&quot;margin-top: 0px; margin-bottom: 0px;&quot;&gt;Flaches Netz&amp;nbsp; 192.168.178.0/24 — keine VLANs, alle Geräte im selben Segment&lt;/h4&gt;" vertex="1">
+          <mxGeometry height="414.25" width="745" x="303.5" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-27" edge="1" parent="1" source="qCpO6rBxxG482hB8VmVx-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="200" />
+              <mxPoint x="990" y="200" />
+            </Array>
+            <mxPoint x="990" y="225.03" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-28" connectable="0" parent="qCpO6rBxxG482hB8VmVx-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="WLAN" vertex="1">
+          <mxGeometry relative="1" x="-0.1205" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-30" parent="1" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=light-dark(#FFF2CC,#FFFF99);strokeColor=#d6b656;fontColor=#666600;" value="Kein Server, keine Domäne — alle in einer Arbeitsgruppe" vertex="1">
+          <mxGeometry height="100" width="170" x="390" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-31" parent="1" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=light-dark(#FFF2CC,#FFFF99);strokeColor=#d6b656;fontColor=#666600;" value="NAS: ein gemeinsames Passwort für alle (§4.4)" vertex="1">
+          <mxGeometry height="100" width="170" x="610" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="qCpO6rBxxG482hB8VmVx-32" parent="1" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=light-dark(#FFF2CC,#FFFF99);strokeColor=#d6b656;fontColor=#666600;" value="Alle sehen alles — keine Trennung (§4.3)" vertex="1">
+          <mxGeometry height="100" width="170" x="839.03" y="610" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
