@@ -78,7 +78,7 @@ Konfiguration erstellt:
 
 | Parameter | Wert | Begründung |
 |---|---|---|
-| Arbeitsspeicher | 16384 MB (Installation) | für die Installation ausreichend; für den Betrieb aller Labor-VMs später auf 32768 MB (32 GiB) erhöht (siehe Baustein 1) |
+| Arbeitsspeicher | 16384 MB (Installation) → 32768 MB (Betrieb) | für die Installation genügten 16 GiB; für den Betrieb aller Labor-VMs wurde der Wert auf 32 GiB (32768 MB) erhöht (siehe Screenshot unten) |
 | Prozessoren | 4 Kerne, Typ `host` | `host` gibt die CPU-Flags durch → nötig für verschachteltes KVM |
 | BIOS | SeaBIOS | stabil, keine Secure-Boot-Komplexität |
 | Maschinentyp | i440fx | bewährt für diese Konfiguration |
@@ -89,6 +89,10 @@ Konfiguration erstellt:
 ![VM 900 – Allgemein / Ressourcen-Pool](../../assets/screenshots/b0-01-vm-general-pool.png)
 
 ![VM 900 – Hardware](../../assets/screenshots/fundament-01-vm900-hardware.png)
+
+*Arbeitsspeicher für den Betrieb auf 32 GiB angehoben (hostet alle Labor-VMs):*
+
+![VM 900 – Arbeitsspeicher 32 GiB](../../assets/screenshots/fundament-06-vm900-ram-32gb.png)
 
 
 ### 4.2 Installation von Proxmox VE
