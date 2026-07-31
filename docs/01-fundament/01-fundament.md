@@ -115,12 +115,10 @@ Wesentliche Installationsparameter:
 | Gateway | 192.168.0.1 |
 | DNS-Server | 192.168.0.1 |
 
-<!-- TODO: Screenshot des Installer-Schritts „Management Network Configuration"
-     mit den endgültigen Werten (pve-lab.fritz.box, 192.168.0.250/24) fehlt.
-     Das Ergebnis ist durch fundament-04 (Netzwerk) und fundament-05b (Konsole)
-     belegt, der Installationsschritt selbst jedoch nicht.
-     ES: falta la captura del paso de red con los valores definitivos. El
-     resultado sí está probado por fundament-04 y fundament-05b. -->
+> *Hinweis:* Vom Installationsschritt „Management Network Configuration" liegt
+> keine Bildschirmaufnahme vor. Die endgültige Netzwerkkonfiguration
+> (`pve-lab.fritz.box`, `192.168.0.250/24`) ist jedoch durch **fundament-04**
+> (Netzwerk) und **fundament-05b** (Konsole) belegt.
 
 
 ### 4.3 Erststart und Boot-Reihenfolge
@@ -132,11 +130,9 @@ wird jedoch nicht mehr zum Starten verwendet.
 
 ![pve-lab – Konsole / Shell nach Erststart](../../assets/screenshots/fundament-05b-pve-lab-shell.png)
 
-<!-- TODO: Screenshot von Optionen → Boot Order fehlt; die geänderte Reihenfolge
-     (scsi0 aktiv, ide2 entfernt) ist damit nicht belegt. Die vorhandene
-     Aufnahme zeigt ausschließlich die Konsole nach dem Erststart.
-     ES: falta captura de Options → Boot Order. -->
+*Boot-Reihenfolge: `scsi0` (Festplatte) aktiv, `ide2` (Installationsmedium) aus der Reihenfolge entfernt:*
 
+![VM 900 – Boot-Reihenfolge](../../assets/screenshots/fundament-07-boot-order.png)
 
 ### 4.4 Paketquellen (Repositories) konfigurieren
 
@@ -237,7 +233,11 @@ Guest Agent sind korrekt konfiguriert.
 ## 8. Nächste Schritte
 
 
-- **Baustein 1 – OPNsense:** Aufbau der Firewall und des internen Labornetzes.
-- <!-- TODO: weitere geplante Bausteine -->
+- **Baustein 1 – Netzwerk:** Segmentierung mit VLANs; OPNsense als Firewall/Router (DHCP, DNS). Netzplan in draw.io (Ist + Soll).
+- **Baustein 2 – Windows:** Server 2025, Active Directory (AD DS), DNS, DHCP, Gruppenrichtlinien (GPO), Fileserver (NTFS), WSUS, PowerShell.
+- **Baustein 3 – Linux-Dienste:** Nginx mit interner PKI, Backups, Docker.
+- **Baustein 4 – Betrieb:** GLPI mit ITIL-Prozessen, Runbooks, SQL-Auswertungen zu SLAs, Monitoring.
+- **Baustein 5 – Automatisierung:** Ansible.
+- **Baustein 6 – Portfolio-Website:** Veröffentlichung über GitHub Pages.
 
 ---
