@@ -5,7 +5,7 @@
 | **Projekt** | Muster GmbH – IT-Infrastruktur |
 | **Baustein** | 1 · Netzwerk (Netzplan + OPNsense) |
 | **Bearbeitet von** | Alix Chaparro |
-| **Datum** | 2026-07-31 |
+| **Datum** | 2026-08-05 |
 | **Status** | In Bearbeitung |
 
 ---
@@ -27,6 +27,9 @@ einem verwaltbaren Switch und einer OPNsense-Firewall, nicht mit
 ---
 
 ## 2. Ist-Zustand
+
+Die nachfolgenden Angaben zum Ist-Zustand stammen aus der Ist-Aufnahme vor Ort
+am 05.08.2026 (siehe Rahmenprojekt, Terminplan).
 
 ### 2.1 Ist-Netzplan
 
@@ -58,7 +61,7 @@ einem gemeinsamen, allen bekannten Passwort**.
 | DHCP-Server | 1 (FRITZ!Box, für alle Geräte gemeinsam) |
 | Zentrale Benutzerverwaltung | keine (Arbeitsgruppe, kein Domänencontroller) |
 | NAS-Zugriff | 1 Freigabe, 1 gemeinsames Passwort |
-| Geräte im selben Segment | ~12 kabelgebunden + 14 Tablets (WLAN) + NAS + Drucker |
+| Geräte im selben Segment | 11 PCs (8 Büro + 3 GF) + 1 Drucker + 1 NAS kabelgebunden, 14 Tablets per WLAN = 27 Geräte in 1 Segment |
 
 ### 2.3 Resultierende Probleme
 
