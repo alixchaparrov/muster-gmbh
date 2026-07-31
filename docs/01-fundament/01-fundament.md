@@ -125,15 +125,17 @@ Wesentliche Installationsparameter:
 
 ### 4.3 Erststart und Boot-Reihenfolge
 
-Nach der Installation wurde die Boot-Reihenfolge angepasst, sodass die VM von der
-Festplatte (`scsi0`) startet und das Installationsmedium (`ide2`) deaktiviert wurde.
+Nach der Installation wurde die Boot-Reihenfolge angepasst, sodass die VM von
+der Festplatte (`scsi0`) startet. Das Installationsmedium (`ide2`) wurde dabei
+aus der Boot-Reihenfolge entfernt – die ISO bleibt im Laufwerk eingebunden,
+wird jedoch nicht mehr zum Starten verwendet.
 
 ![pve-lab – Konsole / Shell nach Erststart](../../assets/screenshots/fundament-05b-pve-lab-shell.png)
 
-<!-- TODO: Kein Screenshot belegt die geänderte Boot-Reihenfolge (scsi0 vor ide2)
-     und die Deaktivierung des Installationsmediums (ide2). Die vorhandene
+<!-- TODO: Screenshot von Optionen → Boot Order fehlt; die geänderte Reihenfolge
+     (scsi0 aktiv, ide2 entfernt) ist damit nicht belegt. Die vorhandene
      Aufnahme zeigt ausschließlich die Konsole nach dem Erststart.
-     ES: falta captura del orden de arranque y de ide2 desactivado. -->
+     ES: falta captura de Options → Boot Order. -->
 
 
 ### 4.4 Paketquellen (Repositories) konfigurieren
