@@ -80,10 +80,41 @@ Aus dem flachen Netz ergeben sich direkt die vom Kunden geschilderten Probleme:
 
 ## 3. Soll-Zustand
 
-<!-- TODO: Soll-Netzplan (draw.io) + Beschreibung des segmentierten Netzes
-     mit den 5 VLANs und dem Adressplan (10.0.x.0/24). -->
+### 3.1 Soll-Netzplan
 
-*(folgt – Soll-Netzplan mit 5 VLANs)*
+![Soll-Netzplan – segmentiertes Netzwerk mit VLANs](../../assets/diagrams/soll-netzplan.drawio.png)
+
+Das flache Netz wird durch ein **segmentiertes Netzwerk mit fünf VLANs** ersetzt.
+Zentrale Komponente ist die **OPNsense-Firewall**, die Routing zwischen den VLANs,
+DHCP je VLAN, DNS und die Firewall-Regeln übernimmt. Der bisherige unmanaged Switch
+wird durch einen **verwaltbaren Switch** ersetzt, der die VLANs als Trunk führt. Das
+WLAN wird nicht mehr von der FRITZ!Box, sondern von einem **Access Point** bereitgestellt,
+der getrennte SSIDs für die Monteur-Tablets (VLAN 40) und für Gäste (VLAN 99) anbietet.
+Die FRITZ!Box dient nur noch als Internet-Zugang.
+
+### 3.2 VLAN- und Adressplan
+
+| VLAN | Name | Subnetz | Gateway | Zweck |
+|---|---|---|---|---|
+| 10 | Management | `10.0.10.0/24` | `10.0.10.1` | Verwaltung der Netzwerkgeräte (OPNsense, Switch, AP) |
+| 20 | Server | `10.0.20.0/24` | `10.0.20.1` | NAS; künftig Windows Server / Fileserver (Baustein 2) |
+| 30 | Büro | `10.0.30.0/24` | `10.0.30.1` | Büro-PCs, Geschäftsführung, Drucker |
+| 40 | Mobil | `10.0.40.0/24` | `10.0.40.1` | Monteur-Tablets (WLAN) |
+| 99 | Gast | `10.0.99.0/24` | `10.0.99.1` | Gäste-WLAN, isoliert |
+
+Adressierungs-Konvention: die VLAN-ID steht im dritten Oktett (`10.0.<VLAN>.0/24`),
+das Gateway jeder VLAN liegt auf `.1` (OPNsense).
+
+### 3.3 Zugriffskonzept (Firewall-Regeln in OPNsense)
+
+Der Zugriff zwischen den VLANs wird durch Regeln auf der OPNsense gesteuert:
+
+- **Büro (30)** darf auf **Server (20)** zugreifen (Dateizugriff auf das NAS).
+- **Mobil (40)** darf – nach Umsetzung des Fileservers – gezielt auf freigegebene
+  Server-Dienste zugreifen; sonst nur Internet.
+- **Gast (99)** erhält **ausschließlich Internet-Zugang**, keinen Zugriff auf interne VLANs.
+- **Management (10)** ist nur von administrativen Geräten erreichbar.
+- Nicht ausdrücklich erlaubter Verkehr zwischen VLANs wird **standardmäßig blockiert**.
 
 ---
 
